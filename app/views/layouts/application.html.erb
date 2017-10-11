@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PersonalWebsiteTheme</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="">
+    <meta name="author" content="Themelize.me">
+
+    <!-- Bootstrap v4.0.0-beta CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+
+    <!-- Theme style -->
+    <link href="/assets/css/theme-style.min.css" rel="stylesheet">
+
+    <!-- Purple colour scheme -->
+    <link href="/assets/css/colour-purple.min.css" rel="stylesheet">
+
+    <!--Your custom colour override-->
+    <link href="#" id="colour-scheme" rel="stylesheet">
+
+    <!-- Your custom override -->
+    <link href="/assets/css/custom-style.css" rel="stylesheet">
+
+
+
+    <!-- Optional: ICON SETS -->
+    <!-- Iconset: Font Awesome 4.7.0 via CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+    <link href="/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Iconset: ionicons - http://ionicons.com/ -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <!-- Iconset: Linearicons - https://linearicons.com/free -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+
+
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+    <link rel="shortcut icon" href="/assets/assets/img/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/assets/img/icons/114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/assets/img/icons/72x72.png">
+    <link rel="apple-touch-icon" href="/assets/assets/img/icons/default.png">
+
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+  </head>
+
+  <body class="page page-onepager header-dark header-ontop page-index-freelancer-portfolio navbar-layout-default">
+
+    <!-- @plugin: page loading indicator, delete to remove loader -->
+    <div class="page-loader" data-toggle="page-loader"></div>
+
+    <a id="#top" href="#content" class="sr-only">Skip to content</a>
+
+    <!-- ======== @Region: #header ======== -->
+    <div id="header" class="w-100 pos-fixed pos-t scroll-state-hidden" data-scroll="scroll-state"
+data-scroll-amount="500"
+data-scroll-setting='{"effectIn":"slideInDown", "effectOut":"slideOutUp", "effectDuration":"0.3", "breakpoint":"992"}'>
+
+
+      <!--Header & Branding region-->
+      <div class="header py-2 bg-inverse bg-op-9 border-bottom-0">
+        <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+        <div class="header-inner container">
+          <!--branding/logo -->
+          <div class="header-brand">
+            <a class="header-brand-text" href="index.html" title="Home">
+              <h2 class="h3 font-weight-normal text-letter-spacing-sm text-font-base text-white">
+                Jay <span class="font-weight-bold">Lockridge</span>
+              </h2>
+            </a>
+            <div class="header-divider d-none d-lg-block"></div>
+            <div class="header-slogan d-none d-lg-block">Web Developer</div>
+          </div>
+          <!-- other header content -->
+          <div class="header-block order-lg-12">
+
+            <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu - data-toggle="overlay" = Overlay Menu -->
+            <a href="#top" class="btn btn-link btn-icon text-white d-lg-none" data-toggle="collapse" data-target=".navbar-main" data-direction="right"> <i class="fa fa-bars"></i> </a>
+          </div>
+
+          <div class="navbar navbar-expand-md navbar-expand-collapse">
+            <!--everything within this div is collapsed on mobile-->
+            <div class="navbar-main collapse">
+              <!--main navigation-->
+              <ul class="nav navbar-nav navbar-inverse navbar-nav-onepager">
+                <li class="nav-item">
+                  <a href="#top" data-toggle="scroll-link" class="nav-link link-effect-underline"> <i class="fa fa-home nav-link-icon"></i> <span class="d-none">Home</span> </a>
+                </li>
+
+                <li class="nav-item"> <a href="#about" data-toggle="scroll-link" class="nav-link link-effect-underline"> About </a> </li>
+                <li class="nav-item"> <a href="#portfolio" data-toggle="scroll-link" class="nav-link link-effect-underline"> Portfolio </a> </li>
+                <li class="nav-item"> <a href="#experience" data-toggle="scroll-link" class="nav-link link-effect-underline"> Experience </a> </li>
+                <li class="nav-item"> <a href="#contact" data-toggle="scroll-link" class="nav-link link-effect-underline"> Contact </a> </li>
+              </ul>
+            </div>
+            <!--/.navbar-collapse -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+    <footer id="footer" class="py-3">
+      <div class="container">
+        <div class="row">
+          <!--@todo: replace with company copyright details-->
+        </div>
+      </div>
+    </footer>
+    <!-- Style switcher - demo only - @todo: remove in production -->
+    
+    <!--Hidden elements - excluded from jPanel Menu on mobile-->
+      <!--@modal - signup modal-->
+
+      <!-- /.modal -->
+
+      <!--@modal - login modal-->
+
+
+    <!--jQuery 3.2.1 via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper 1.9.3 via CDN, needed for Bootstrap Tooltips & Popovers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.9.3/umd/popper.min.js"></script>
+
+    <!-- Bootstrap v4.0.0-beta JS via CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+
+    <!--Custom scripts & AppStrap API integration -->
+    <script src="/assets/js/custom-script.js"></script>
+    <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+    <script src="/assets/js/script.min.js"></script>
+  </body>
+</html>
